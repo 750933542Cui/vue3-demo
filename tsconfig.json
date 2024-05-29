@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // 编译目标为最新的 ECMAScript 标准
+    "module": "esnext", // 使用最新的 ECMAScript 模块
+    "useDefineForClassFields": true,
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "skipLibCheck": true,
+
+    "importHelpers": true, // 允许从 tslib 导入辅助函数
+    "esModuleInterop": true, // 允许默认导入与 CommonJS 模块互操作
+    "experimentalDecorators": true, // 启用装饰器支持
+    "emitDecoratorMetadata": true, // 启用装饰器元数据的发射
+    "allowSyntheticDefaultImports": true, // 允许从模块中默认导入
+
+    /* node mode */
+    "moduleResolution": "node", // 使用 Node.js 风格的模块解析
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve", // 保留 JSX 语法，不转换为 JavaScript
+    "baseUrl": ".",
+    "paths": {
+      // 可以设置路径映射
+      "@/*": ["src/*"],
+      "@pages/*": ["src/pages/*"],
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@router/*": ["src/router/*"],
+      "@utils/*": ["src/utils/*"],
+      "@store/*": ["src/store/*"]
+    },
+
+    /* Linting */
+    "strict": true, // 开启所有的严格类型检查选项
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "vite-vue.d.ts",
+    "vite-env.d.ts"
+  ],
+  "exclude": ["node_modules"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

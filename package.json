@@ -1,0 +1,30 @@
+{
+  "name": "vue3-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "element-plus": "^2.6.3",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@lljj/vue3-form-element": "^1.19.0",
+    "@types/node": "^20.12.5",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "eslint-config-vue": "^1.1.0",
+    "eslint-plugin-vue": "^2.1.0",
+    "less": "^4.2.0",
+    "less-loader": "^12.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6",
+    "vuex": "^4.1.0"
+  }
+}
