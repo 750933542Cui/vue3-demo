@@ -31,6 +31,7 @@ const strFun = `(() => {
         };
       })()`;
 
+// @ts-ignore
 const placeholderFun = (...args: any) => {
   const bindFun = eval(strFun).bind(null, ...args, "type");
   return bindFun();
