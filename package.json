@@ -17,7 +17,9 @@
   "devDependencies": {
     "@lljj/vue3-form-element": "^1.19.0",
     "@types/node": "^20.12.5",
+    "@types/vue": "^2.0.0",
     "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^4.19.1",
     "eslint-config-vue": "^1.1.0",
     "eslint-plugin-vue": "^2.1.0",
     "less": "^4.2.0",

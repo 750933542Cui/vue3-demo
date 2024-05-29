@@ -24,18 +24,18 @@ defineOptions({ name: "JsonSchemaElement" });
 
 // monaco json编辑器
 
-const strFun = `(() => {
-        return (parent, root, prop,type) => {
-          console.log(parent, root, prop,type);
-          return true;
-        };
-      })()`;
+// const strFun = `(() => {
+//         return (parent, root, prop,type) => {
+//           console.log(parent, root, prop,type);
+//           return true;
+//         };
+//       })()`;
 
 // @ts-ignore
-const placeholderFun = (...args: any) => {
-  const bindFun = eval(strFun).bind(null, ...args, "type");
-  return bindFun();
-};
+// const placeholderFun = (...args: any) => {
+//   const bindFun = eval(strFun).bind(null, ...args, "type");
+//   return bindFun();
+// };
 
 const formData = ref({});
 const schema = ref({
