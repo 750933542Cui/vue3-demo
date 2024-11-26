@@ -76,7 +76,6 @@
           <span>作 者：</span>
           Mr_Cui
         </div>
-        <span>test git</span>
       </el-card>
     </el-col>
   </el-row>
